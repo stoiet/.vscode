@@ -1,4 +1,103 @@
 {
+  "accessibility.debugWatchVariableAnnouncements": false,
+  "accessibility.hideAccessibleView": true,
+  "accessibility.signalOptions.volume": 0,
+  "accessibility.signals.chatRequestSent": {
+    "sound": "off",
+    "announcement": "off"
+  },
+  "accessibility.signals.chatResponseReceived": {
+    "sound": "off"
+  },
+  "accessibility.signals.clear": {
+    "sound": "off",
+    "announcement": "off"
+  },
+  "accessibility.signals.diffLineDeleted": {
+    "sound": "off"
+  },
+  "accessibility.signals.diffLineInserted": {
+    "sound": "off"
+  },
+  "accessibility.signals.diffLineModified": {
+    "sound": "off"
+  },
+  "accessibility.signals.lineHasBreakpoint": {
+    "sound": "off",
+    "announcement": "off"
+  },
+  "accessibility.signals.lineHasError": {
+    "sound": "off",
+    "announcement": "off"
+  },
+  "accessibility.signals.lineHasFoldedArea": {
+    "sound": "off",
+    "announcement": "off"
+  },
+  "accessibility.signals.lineHasInlineSuggestion": {
+    "sound": "off"
+  },
+  "accessibility.signals.lineHasWarning": {
+    "sound": "off",
+    "announcement": "off"
+  },
+  "accessibility.signals.noInlayHints": {
+    "sound": "off",
+    "announcement": "off"
+  },
+  "accessibility.signals.notebookCellCompleted": {
+    "sound": "off",
+    "announcement": "off"
+  },
+  "accessibility.signals.notebookCellFailed": {
+    "sound": "off",
+    "announcement": "off"
+  },
+  "accessibility.signals.onDebugBreak": {
+    "sound": "off",
+    "announcement": "off"
+  },
+  "accessibility.signals.positionHasError": {
+    "sound": "off",
+    "announcement": "off"
+  },
+  "accessibility.signals.positionHasWarning": {
+    "sound": "off",
+    "announcement": "off"
+  },
+  "accessibility.signals.progress": {
+    "sound": "off",
+    "announcement": "off"
+  },
+  "accessibility.signals.taskCompleted": {
+    "sound": "off",
+    "announcement": "off"
+  },
+  "accessibility.signals.taskFailed": {
+    "sound": "off",
+    "announcement": "off"
+  },
+  "accessibility.signals.terminalBell": {
+    "sound": "off"
+  },
+  "accessibility.signals.terminalCommandFailed": {
+    "sound": "off",
+    "announcement": "off"
+  },
+  "accessibility.signals.terminalCommandSucceeded": {
+    "sound": "off",
+    "announcement": "off"
+  },
+  "accessibility.signals.terminalQuickFix": {
+    "sound": "off",
+    "announcement": "off"
+  },
+  "accessibility.signals.voiceRecordingStarted": {
+    "sound": "off"
+  },
+  "accessibility.signals.voiceRecordingStopped": {
+    "sound": "off"
+  },
   "accessibility.verbosity.comments": false,
   "accessibility.verbosity.debug": false,
   "accessibility.verbosity.diffEditor": false,
@@ -6,7 +105,14 @@
   "accessibility.verbosity.emptyEditorHint": false,
   "accessibility.verbosity.hover": false,
   "accessibility.verbosity.inlineChat": false,
+  "accessibility.verbosity.inlineCompletions": false,
+  "accessibility.verbosity.keybindingsEditor": false,
+  "accessibility.verbosity.notebook": false,
   "accessibility.verbosity.notification": false,
+  "accessibility.verbosity.panelChat": false,
+  "accessibility.verbosity.replInputHint": false,
+  "accessibility.verbosity.terminal": false,
+  "accessibility.verbosity.walkthrough": false,
   "breadcrumbs.enabled": false,
   "breadcrumbs.filePath": "off",
   "breadcrumbs.icons": false,
@@ -41,9 +147,21 @@
   "chat.editing.confirmEditRequestRemoval": false,
   "chat.editing.confirmEditRequestRetry": false,
   "comments.visible": false,
+  "debug.console.collapseIdenticalLines": false,
+  "debug.console.historySuggestions": false,
+  "debug.console.wordWrap": false,
+  "debug.disassemblyView.showSourceCode": false,
+  "debug.enableStatusBarColor": false,
+  "debug.focusEditorOnBreak": false,
+  "debug.focusWindowOnBreak": false,
+  "debug.gutterMiddleClickAction": "none",
   "debug.inlineValues": "off",
+  "debug.internalConsoleOptions": "neverOpen",
   "debug.openDebug": "neverOpen",
   "debug.showInStatusBar": "never",
+  "debug.showInlineBreakpointCandidates": false,
+  "debug.toolBarLocation": "hidden",
+  "diffEditor.experimental.showMoves": true,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "off",
   "editor.accessibilityPageSize": 1,
@@ -69,6 +187,8 @@
   "editor.dragAndDrop": false,
   "editor.dropIntoEditor.enabled": false,
   "editor.dropIntoEditor.showDropSelector": "never",
+  "editor.experimentalWhitespaceRendering": "off",
+  "editor.fastScrollSensitivity": 0,
   "editor.find.cursorMoveOnType": false,
   "editor.find.loop": false,
   "editor.find.seedSearchStringFromSelection": "selection",
@@ -81,6 +201,7 @@
   "editor.guides.bracketPairsHorizontal": false,
   "editor.guides.highlightActiveBracketPair": false,
   "editor.guides.highlightActiveIndentation": false,
+  "editor.hideCursorInOverviewRuler": true,
   "editor.hover.above": false,
   "editor.hover.enabled": false,
   "editor.hover.sticky": false,
@@ -98,22 +219,30 @@
   "editor.overviewRulerBorder": false,
   "editor.parameterHints.cycle": false,
   "editor.parameterHints.enabled": false,
-  "editor.quickSuggestions": {"other": "off"},
+  "editor.pasteAs.enabled": false,
+  "editor.pasteAs.showPasteSelector": "never",
+  "editor.quickSuggestions": {
+    "other": "off"
+  },
   "editor.quickSuggestionsDelay": 0,
+  "editor.rename.enablePreview": false,
   "editor.renderLineHighlight": "none",
   "editor.roundedSelection": false,
   "editor.screenReaderAnnounceInlineSuggestion": false,
-  "editor.scrollbar.horizontalScrollbarSize": 9,
-  "editor.scrollbar.verticalScrollbarSize": 9,
+  "editor.scrollBeyondLastColumn": 5,
+  "editor.scrollbar.horizontalScrollbarSize": 8,
+  "editor.scrollbar.verticalScrollbarSize": 8,
   "editor.selectionHighlight": false,
   "editor.semanticHighlighting.enabled": false,
+  "editor.showDeprecated": false,
   "editor.smartSelect.selectSubwords": false,
-  "editor.snippets.codeActions.enabled": false,
   "editor.snippetSuggestions": "none",
+  "editor.snippets.codeActions.enabled": false,
   "editor.stickyScroll.enabled": false,
   "editor.stickyScroll.maxLineCount": 1,
   "editor.stickyScroll.scrollWithEditor": false,
   "editor.suggest.filterGraceful": false,
+  "editor.suggest.matchOnWordStartOnly": false,
   "editor.suggest.selectionMode": "never",
   "editor.suggest.showClasses": false,
   "editor.suggest.showColors": false,
@@ -146,12 +275,13 @@
   "editor.suggest.showValues": false,
   "editor.suggest.showVariables": false,
   "editor.suggest.showWords": false,
-  "editor.suggest.snippetsPreventQuickSuggestions": true,
   "editor.suggestOnTriggerCharacters": false,
   "editor.tabSize": 2,
   "editor.unusualLineTerminators": "auto",
   "editor.wordBasedSuggestions": "off",
   "explorer.copyRelativePathSeparator": "/",
+  "explorer.decorations.badges": false,
+  "explorer.decorations.colors": false,
   "explorer.excludeGitIgnore": true,
   "explorer.expandSingleFolderWorkspaces": false,
   "explorer.fileNesting.expand": false,
@@ -159,11 +289,12 @@
   "explorer.openEditors.visible": 1,
   "extensions.ignoreRecommendations": true,
   "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 1800,
+  "files.autoSaveDelay": 1600,
   "files.enableTrash": false,
   "files.insertFinalNewline": true,
   "files.participants.timeout": 0,
   "files.readonlyFromPermissions": true,
+  "files.refactoring.autoSave": false,
   "files.simpleDialog.enable": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
@@ -217,14 +348,17 @@
   "search.decorations.colors": false,
   "search.maxResults": 2000,
   "search.quickOpen.includeHistory": false,
-  "search.searchEditor.focusResultsOnSearch": true,
-  "search.searchOnTypeDebouncePeriod": 200,
+  "search.searchOnTypeDebouncePeriod": 250,
   "search.useReplacePreview": false,
   "simpleBrowser.focusLockIndicator.enabled": false,
   "task.allowAutomaticTasks": "off",
   "task.autoDetect": "off",
   "task.quickOpen.detail": false,
   "telemetry.telemetryLevel": "off",
+  "testing.followRunningTest": false,
+  "testing.gutterEnabled": false,
+  "testing.openTesting": "neverOpen",
+  "testing.showCoverageInExplorer": false,
   "update.showReleaseNotes": false,
   "window.commandCenter": false,
   "window.confirmBeforeClose": "always",
@@ -242,20 +376,26 @@
   "workbench.colorTheme": "CRT Gray",
   "workbench.commandPalette.experimental.enableNaturalLanguageSearch": false,
   "workbench.editor.autoLockGroups": {
-    "default"                             : true ,
-    "terminalEditor"                      : false,
+    "default": true,
+    "terminalEditor": false,
     "mainThreadWebview-simpleBrowser.view": false,
-    "mainThreadWebview-browserPreview"    : false
+    "mainThreadWebview-browserPreview": false
   },
   "workbench.editor.closeOnFileDelete": true,
   "workbench.editor.customLabels.enabled": false,
   "workbench.editor.decorations.badges": false,
   "workbench.editor.decorations.colors": false,
+  "workbench.editor.dragToOpenWindow": false,
   "workbench.editor.editorActionsLocation": "hidden",
   "workbench.editor.empty.hint": "hidden",
   "workbench.editor.enablePreview": false,
   "workbench.editor.focusRecentEditorAfterClose": false,
   "workbench.editor.historyBasedLanguageDetection": false,
+  "workbench.editor.labelFormat": "short",
+  "workbench.editor.languageDetectionHints": {
+    "untitledEditors": false,
+    "notebookEditors": false
+  },
   "workbench.editor.limit.value": 1,
   "workbench.editor.mouseBackForwardToNavigate": false,
   "workbench.editor.navigationScope": "editor",
@@ -269,18 +409,25 @@
   "workbench.enableExperiments": false,
   "workbench.iconTheme": null,
   "workbench.layoutControl.enabled": false,
+  "workbench.layoutControl.type": "menu",
   "workbench.localHistory.enabled": false,
   "workbench.localHistory.maxFileEntries": 0,
   "workbench.localHistory.maxFileSize": 1,
-  "workbench.panel.opensMaximized": "always",
+  "workbench.panel.opensMaximized": "never",
+  "workbench.panel.showLabels": false,
   "workbench.preferredDarkColorTheme": "Default High Contrast",
   "workbench.quickOpen.closeOnFocusLost": false,
+  "workbench.reduceMotion": "on",
   "workbench.remoteIndicator.showExtensionRecommendations": false,
+  "workbench.sash.hoverDelay": 0,
+  "workbench.sash.size": 1,
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
   "workbench.statusBar.visible": false,
   "workbench.tips.enabled": false,
   "workbench.tree.enableStickyScroll": false,
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.tree.stickyScrollMaxItemCount": 1,
   "workbench.welcomePage.walkthroughs.openOnInstall": false
 }
